@@ -9,7 +9,7 @@ typedef struct {
 	int size;
 } DoublyLinkedList;
 
-void createFromArray(int *array, int array_size);
+DoublyLinkedList *createFromArray(int *array, int array_size);
 
 void insert(void);
 
@@ -19,8 +19,8 @@ void removeByValue(void);
 
 void removeByIndex(void);
 
-void print(void);
+void printDLList(DoublyLinkedList *doublyList);
 
-void destroy(void);
+void destroyDLList(DoublyLinkedList *);
 
 #endif

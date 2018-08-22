@@ -1,3 +1,9 @@
+/*
+** File:         Node.c
+** Author:       Jacob Taylor Cassady
+** Description: 
+** Last Updated: 8/21/18
+*/
 
 /* Compiler/OS Headers */
 #include <stdlib.h>
@@ -5,7 +11,7 @@
 /* User Created Headers */
 #include "../headers/Node.h"
 
-Node* createNode(int value, Node *previousNode){
+Node *createNode(int value, Node *previousNode){
 	Node *newNode = malloc(sizeof(Node));
 
 	newNode->value = value;
