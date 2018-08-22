@@ -2,7 +2,7 @@
 ** File:         Node.c
 ** Author:       Jacob Taylor Cassady
 ** Description: 
-** Last Updated: 8/21/18
+** Last Updated: 8/22/18
 */
 
 /* Compiler/OS Headers */

@@ -9,18 +9,18 @@ typedef struct {
 	int size;
 } DoublyLinkedList;
 
-DoublyLinkedList *createFromArray(int *, int);
+DoublyLinkedList *dll_createFromArray(int *, int);
 
-DoublyLinkedList *insert(DoublyLinkedList *, unsigned int, int );
+DoublyLinkedList *dll_insert(DoublyLinkedList *, unsigned int, int );
 
-void append(DoublyLinkedList *, int);
+DoublyLinkedList *dll_append(DoublyLinkedList *, int);
 
-void removeByValue(void);
+DoublyLinkedList *dll_removeByValue(DoublyLinkedList *, int);
 
-void removeByIndex(void);
+DoublyLinkedList *dll_removeByIndex(DoublyLinkedList *, int);
 
-void printDLList(DoublyLinkedList *doublyList);
+void dll_print(DoublyLinkedList *doublyList);
 
-void destroyDLList(DoublyLinkedList *);
+void dll_destroy(DoublyLinkedList *);
 
 #endif
