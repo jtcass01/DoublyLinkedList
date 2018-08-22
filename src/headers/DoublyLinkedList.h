@@ -9,11 +9,11 @@ typedef struct {
 	int size;
 } DoublyLinkedList;
 
-DoublyLinkedList *createFromArray(int *array, int array_size);
+DoublyLinkedList *createFromArray(int *, int);
 
-void insert(void);
+DoublyLinkedList *insert(DoublyLinkedList *, unsigned int, int );
 
-void append(void);
+void append(DoublyLinkedList *, int);
 
 void removeByValue(void);
 

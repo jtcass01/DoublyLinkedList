@@ -12,12 +12,24 @@
 #include "headers/Node.h"
 #include "headers/DoublyLinkedList.h"
 
+
+/* Constants */
 #define TEST_LIST_SIZE 10
 
+
+/* Function prototypes */
 void nodeTest(void);
 void doublyLinkedListTest(void);
 void printArray(int *, int);
 
+
+/* Main function */
+int main(int argc, char *argv[]) {
+	doublyLinkedListTest();
+}
+
+
+/* Function definitions */
 void nodeTest(void) {
 	Node *testNode = createNode(50, NULL);
 
@@ -34,6 +46,12 @@ void doublyLinkedListTest(void){
 
 	printDLList(testList);
 
+	printf("\n\nPerforming insert...");
+	testList = insert(testList, 0, 100);
+	testList = insert(testList, 2, 15);
+	testList = insert(testList, 12, 20);
+	printDLList(testList);
+
 	destroyDLList(testList);
 }
 
@@ -43,8 +61,4 @@ void printArray(int *array, int array_size){
 	for(unsigned int array_index = 0; array_index < array_size; array_index++){
 		printf("\n\tArray[%d] = %d", array_index, *(array + array_index));
 	}
-}
-
-int main(int argc, char *argv[]) {
-	doublyLinkedListTest();
 }
