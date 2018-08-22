@@ -2,7 +2,7 @@ CC = gcc 								# compiler
 CFLAGS = -Wall -g 						# compile flags
 LIBS = -lm 								# libs
 
-SRCS = DoublyLinkedList.c Node.c test.c # source files
+SRCS = includes/DoublyLinkedList.c includes/Node.c test.c # source files
 OBJS = $(SRCS:.c=.o) 					# object files
 
 TARG = test
