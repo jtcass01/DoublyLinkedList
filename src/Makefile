@@ -1,9 +1,9 @@
-CC = gcc 				# compiler
-CFLAGS = -Wall -g 		# compile flags
-LIBS = -lm 				# libs
+CC = gcc 								# compiler
+CFLAGS = -Wall -g 						# compile flags
+LIBS = -lm 								# libs
 
-SRCS = Node.c test.c	# source files
-OBJS = $(SRCS:.c=.o) 	# object files
+SRCS = DoublyLinkedList.c Node.c test.c # source files
+OBJS = $(SRCS:.c=.o) 					# object files
 
 TARG = test
 

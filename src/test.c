@@ -1,18 +1,12 @@
 #include <stdio.h>
 #include <assert.h>
-#include <stdlib.h>
-#include "Node.h"
-
+#include "headers/Node.h"
+#include "headers/DoublyLinkedList.h"
 
 int main(int argc, char *argv[]) {
-	Node *testNode = malloc(sizeof(Node));
-	assert(testNode != NULL);
+	Node *testNode = createNode(8, NULL);
 
-	testNode->value = 5;
+	printNode(testNode);
 
-	printf("testNode value = %d", testNode->value);
-
-	free(testNode);
-
-	return 0;
+	deleteNode(testNode);
 }
